@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" />
+    <title>Lotto Results PH - Real-Time PCSO Lottery Results</title>
+    
+    <!-- Meta tags for GEO / SEO Optimization -->
+    <meta name="description" content="Evergreen Lotto Results PH platform. Live real-time PCSO lottery results for 6/58 Ultra, 6/55 Grand, 3D Swertres, jackpot trackers, and AI-powered lucky pick generator." />
+    <meta name="author" content="Abhi C" />
+    <meta name="keywords" content="PCSO Lotto, Philippines Lotto results, Swertres, 6/58 Ultra Lotto, 6/55 Grand Lotto, Lotto Schedule, Jackpot Tracker, AI Lucky Pick, Live Draw Results" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Google Fonts: Space Grotesk / Inter / JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- PWA Manifest Link -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Evergreen Date Script (Targeting May 14, 2026) -->
+    <script>
+      (function() {
+        // Sets a globally accessible date string based on MNL Timezone (UTC+8) alignment
+        const now = new Date();
+        window.userLocalDate = now.toLocaleDateString("en-PH", {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric"
+        });
+        console.log("Lotto Results PH Date Script: Initialized to " + window.userLocalDate);
+      })();
+    </script>
+
+    <!-- Monetization: Adsterra Placeholder Script for Social Bar -->
+    <script type="text/javascript">
+      // Lotto Results PH - Adsterra Social Bar Ad Placeholder Injection
+      window.adsterraSocialBarConfig = {
+        publisherId: "lotto-ph-publish-2026-05",
+        barLocation: "bottom-center",
+        networkType: "Adsterra-Prestige",
+        active: true
+      };
+      console.log("Adsterra Social Bar Config Loaded (Success 160px container alert)");
+    </script>
+
+    <!-- JSON-LD Structured Data Schema for Rich Google Snippets -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "@id": "https://lottoresultsph.com/#article",
+            "isPartOf": {
+              "@id": "https://lottoresultsph.com/#website"
+            },
+            "headline": "Latest PCSO Philippine Lotto Results & Game Schemas",
+            "description": "Evergreen live results for 3D Swertres, Ultra Lotto 6/58, Grand Lotto 6/55, and complete PCSO draw schedules.",
+            "inLanguage": "en-PH",
+            "mainEntityOfPage": "https://lottoresultsph.com/",
+            "datePublished": "2026-05-14T09:00:00+08:00",
+            "dateModified": "2026-05-14T21:15:00+08:00",
+            "author": {
+              "@type": "Person",
+              "name": "Abhi C"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Lotto Results PH",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://lottoresultsph.com/logo.png"
+              }
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://lottoresultsph.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "When does the PCSO draw lottery games?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "PCSO draws major lotto games daily at 9:00 PM Manila Time. Swertres 3D and EZ2 2D are drawn at 2:00 PM, 5:00 PM, and 9:00 PM standard times."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How is the dynamic jackpot calculated in the Philippines?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Lotto jackpots in the Philippines start at ₱5.9M to ₱49.5M depending on the game, and roll over with multiple millions added after each draw when nobody matches the 6-number sequence."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I generate AI lucky pick numbers for PCSO Lotto?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! The Lotto Results PH program uses deep-learning analytics grounded in May 2026 astrology, numerology, and historical frequency to generate 3 customized lucky picking sets."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://lottoresultsph.com/#breadcrumbs",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://lottoresultsph.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "6/58 Ultra Lotto",
+                "item": "https://lottoresultsph.com/6-58"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "AI Lucky Pick",
+                "item": "https://lottoresultsph.com/lucky-pick"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-[#111415] text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- PWA Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('Lotto Results PH Service Worker registered!', reg.scope))
+            .catch(err => console.error('Service Worker registration failed:', err));
+        });
+      }
+    </script>
+  </body>
+</html>
+

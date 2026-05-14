@@ -1,0 +1,8 @@
+{
+  "name": "Lotto Results PH",
+  "description": "Premium, real-time PCSO Lottery Results platform for the Philippines. Includes 6/58 Ultra, 6/55 Grand, 3D Swertres, Jackpot Tracker, Draw Schedule, and AI Lucky Pick Generator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
